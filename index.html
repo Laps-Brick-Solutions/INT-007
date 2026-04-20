@@ -3,26 +3,26 @@
 <head>
 <meta charset='UTF-8'>
 <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-<title>Studio Modvi | Berlin İç Mimari & Interior Design</title>
+<title>Studio Modvi — Berlin İç Mimarlık & Tasarım Stüdyosu</title>
 <script src='https://cdn.tailwindcss.com'></script>
 <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css'>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <script>
 tailwind.config = {
   theme: {
     extend: {
       fontFamily: {
-        heading: ['"Playfair Display"', 'serif'],
-        body: ['Inter', 'sans-serif']
+        'serif': ['"Playfair Display"', 'serif'],
+        'sans': ['Inter', 'sans-serif']
       },
       colors: {
         primary: '#0F0F0E',
         secondary: '#F5F1EA',
         accent: '#B8936A',
         'accent-dark': '#3D4A3D',
-        'bg-light': '#F5F1EA'
+        'bg-light': '#FAF8F4'
       }
     }
   }
@@ -75,7 +75,7 @@ html{scroll-behavior:smooth}
 <style>:root{--lb-banner-h:0px}.header,nav,.navbar{top:var(--lb-banner-h,0px)!important;margin-top:0!important}</style>
 <script>
 (function(){
-  var END = new Date("2026-05-04T19:31:58.823Z");
+  var END = new Date("2026-05-04T19:45:43.700Z");
   function updateCountdown(){
     var now = new Date();
     var diff = END - now;
@@ -111,160 +111,146 @@ html{scroll-behavior:smooth}
 
 
 <svg style='display:none' aria-hidden='true'><defs><symbol id='logo-symbol' viewBox='0 0 48 48'>
-  <rect x='4' y='4' width='40' height='40' rx='2' fill='none' stroke='currentColor' class='text-primary' stroke-width='1.5'/>
-  <path d='M12 36 L12 14 L20 26 L28 14 L28 36' fill='none' stroke='currentColor' class='text-primary' stroke-width='2' stroke-linecap='square' stroke-linejoin='miter'/>
-  <circle cx='34' cy='30' r='4' fill='none' stroke='currentColor' class='text-accent' stroke-width='1.5'/>
-  <line x1='34' y1='14' x2='34' y2='22' stroke='currentColor' class='text-accent' stroke-width='1.5'/>
+  <rect x='4' y='4' width='40' height='40' rx='2' fill='none' stroke='currentColor' class='text-primary' stroke-width='1.2'/>
+  <path d='M12 34 L12 14 L24 26 L36 14 L36 34' fill='none' stroke='currentColor' class='text-primary' stroke-width='1.5' stroke-linecap='square' stroke-linejoin='miter'/>
+  <circle cx='24' cy='38' r='1.2' fill='currentColor' class='text-accent'/>
 </symbol></defs></svg>
 
-<!-- NAV -->
 <nav class='fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-white/80 border-b border-gray-100 shadow-sm'>
   <div class='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
     <div class='flex items-center justify-between h-20'>
       <a href='#hero' class='flex items-center gap-3'>
-        <svg class='h-20 w-auto flex-shrink-0'><use href='#logo-symbol'/></svg>
+        <svg class='h-20 w-auto flex-shrink-0 text-primary'><use href='#logo-symbol'/></svg>
         <div class='flex flex-col leading-tight'>
           <span class='font-display text-xl tracking-wide text-primary'>Studio Modvi</span>
           <span class='text-xs tracking-widest uppercase text-secondary/70'>Tasarımın İnce Sanatı</span>
         </div>
       </a>
       <div class='hidden lg:flex items-center gap-10'>
-        <a href='#hero' class='text-sm font-medium tracking-wide text-gray-700 hover:text-primary transition-colors'>Ana Sayfa</a>
-        <a href='#hizmetler' class='text-sm font-medium tracking-wide text-gray-700 hover:text-primary transition-colors'>Hizmetler</a>
-        <a href='#hakkimizda' class='text-sm font-medium tracking-wide text-gray-700 hover:text-primary transition-colors'>Hakkımızda</a>
-        <a href='#portfoy' class='text-sm font-medium tracking-wide text-gray-700 hover:text-primary transition-colors'>Portföy</a>
-        <a href='#iletisim' class='text-sm font-medium tracking-wide text-gray-700 hover:text-primary transition-colors'>İletişim</a>
+        <a href='#hero' class='text-sm font-medium text-gray-700 hover:text-primary transition-colors'>Ana Sayfa</a>
+        <a href='#hizmetler' class='text-sm font-medium text-gray-700 hover:text-primary transition-colors'>Hizmetler</a>
+        <a href='#hakkimizda' class='text-sm font-medium text-gray-700 hover:text-primary transition-colors'>Hakkımızda</a>
+        <a href='#portfoy' class='text-sm font-medium text-gray-700 hover:text-primary transition-colors'>Portföy</a>
+        <a href='#iletisim' class='text-sm font-medium text-gray-700 hover:text-primary transition-colors'>İletişim</a>
       </div>
-      <div class='hidden lg:flex items-center'>
-        <a href='https://wa.me/4917675221290' class='bg-primary text-white px-5 py-2.5 rounded-xl font-semibold hover:opacity-90 transition-all'>Projenizi Konuşalım</a>
-      </div>
-      <button id='hamburger' class='lg:hidden text-primary text-2xl'><i class='fa fa-bars'></i></button>
+      <a href='https://wa.me/4917675221290' class='hidden lg:inline-flex items-center gap-2 bg-primary text-white px-5 py-2.5 rounded-xl font-semibold hover:opacity-90 transition-all'>
+        <i class='fa-brands fa-whatsapp'></i> Projenizi Konuşalım
+      </a>
+      <button id='hamburger' class='lg:hidden text-primary text-2xl' aria-label='Menü'>
+        <i class='fa fa-bars'></i>
+      </button>
     </div>
     <div id='mobile-menu' class='hidden lg:hidden pb-6 space-y-3'>
-      <a href='#hero' class='block py-2 text-gray-700 font-medium'>Ana Sayfa</a>
-      <a href='#hizmetler' class='block py-2 text-gray-700 font-medium'>Hizmetler</a>
-      <a href='#hakkimizda' class='block py-2 text-gray-700 font-medium'>Hakkımızda</a>
-      <a href='#portfoy' class='block py-2 text-gray-700 font-medium'>Portföy</a>
-      <a href='#iletisim' class='block py-2 text-gray-700 font-medium'>İletişim</a>
+      <a href='#hero' class='block text-sm font-medium text-gray-700 py-2'>Ana Sayfa</a>
+      <a href='#hizmetler' class='block text-sm font-medium text-gray-700 py-2'>Hizmetler</a>
+      <a href='#hakkimizda' class='block text-sm font-medium text-gray-700 py-2'>Hakkımızda</a>
+      <a href='#portfoy' class='block text-sm font-medium text-gray-700 py-2'>Portföy</a>
+      <a href='#iletisim' class='block text-sm font-medium text-gray-700 py-2'>İletişim</a>
       <a href='https://wa.me/4917675221290' class='block bg-primary text-white px-5 py-3 rounded-xl font-semibold text-center'>Projenizi Konuşalım</a>
     </div>
   </div>
 </nav>
 
-<!-- HERO CAROUSEL -->
 <section id='hero' class='relative overflow-hidden'>
   <div id='hero-slides' class='flex transition-transform duration-700 ease-in-out'>
-
     <div class='hero-slide relative min-h-screen flex items-center w-full flex-shrink-0'>
-      <img src='https://res.cloudinary.com/dlfzvqf9k/image/upload/assets/INT-007/Projects/Restaurant_Poject/22.jpg' alt='Studio Modvi Hero' class='absolute inset-0 w-full h-full object-cover'/>
+      <img src='https://res.cloudinary.com/dlfzvqf9k/image/upload/assets/INT-007/Projects/Restaurant_Poject/22.jpg' alt='Studio Modvi Hero' class='absolute inset-0 w-full h-full object-cover'>
       <div class='absolute inset-0 bg-black/55'></div>
-      <div class='relative z-10 text-white text-center max-w-4xl mx-auto px-4'>
+      <div class='relative z-10 text-white text-center max-w-4xl mx-auto px-4 fade-up'>
         <p class='text-sm font-medium tracking-widest uppercase mb-6 text-accent'>Berlin · İç Mimarlık Stüdyosu</p>
         <h1 class='text-5xl md:text-7xl font-black tracking-tight leading-tight mb-6 font-display'>Tasarımın İnce Sanatı</h1>
-        <p class='text-lg md:text-xl text-gray-100 leading-relaxed max-w-2xl mx-auto mb-10'>Fikirden anahtar teslime kadar; her mekanı, sınırlı sayıda üretilen bir sanat eseri gibi özenle kuruyoruz.</p>
-        <div class='flex flex-wrap justify-center gap-4'>
-          <a href='#iletisim' class='bg-primary text-white px-8 py-4 rounded-2xl font-bold hover:opacity-90 transition-all hover:scale-105'>Projenizi Konuşalım</a>
-          <a href='#portfoy' class='border-2 border-white/70 text-white px-8 py-4 rounded-2xl font-bold hover:bg-white/10 transition-all'>Projeleri Keşfet</a>
+        <p class='text-lg text-gray-100 leading-relaxed max-w-2xl mx-auto mb-10'>Fikirden anahtar teslime kadar, her projeyi sınırlı sayıda üretilen bir sanat eseri gibi ele alıyoruz. Yaşam tarzınıza özel mekân deneyimleri.</p>
+        <div class='flex flex-col sm:flex-row gap-4 justify-center'>
+          <a href='#iletisim' class='bg-primary px-8 py-4 rounded-2xl font-bold hover:opacity-90 transition-all hover:scale-105 text-white'>Projenizi Konuşalım</a>
+          <a href='#portfoy' class='border-2 border-white/70 px-8 py-4 rounded-2xl font-bold hover:bg-white/10 transition-all'>Portföyü Keşfet</a>
         </div>
       </div>
     </div>
-
     <div class='hero-slide relative min-h-screen flex items-center w-full flex-shrink-0'>
-      <img src='https://res.cloudinary.com/dlfzvqf9k/image/upload/assets/INT-007/Projects/Restaurant_Poject/kordonson1.jpg' alt='Editöryal Tasarım' class='absolute inset-0 w-full h-full object-cover'/>
+      <img src='https://res.cloudinary.com/dlfzvqf9k/image/upload/assets/INT-007/Projects/Kitchen_Design/sonn1.jpg' alt='Güven' class='absolute inset-0 w-full h-full object-cover'>
       <div class='absolute inset-0 bg-black/55'></div>
-      <div class='relative z-10 text-white text-center max-w-4xl mx-auto px-4'>
-        <p class='text-sm font-medium tracking-widest uppercase mb-6 text-accent'>Zamansız · Özgün · Bütünsel</p>
+      <div class='relative z-10 text-white text-center max-w-4xl mx-auto px-4 fade-up'>
+        <p class='text-sm font-medium tracking-widest uppercase mb-6 text-accent'>Butik Yaratıcı Stüdyo</p>
         <h2 class='text-5xl md:text-7xl font-black tracking-tight leading-tight mb-6 font-display'>Her Detay Bir Niyettir</h2>
-        <p class='text-lg md:text-xl text-gray-100 leading-relaxed max-w-2xl mx-auto mb-10'>Berlin ve Almanya genelinde; ev sahipleri, kiracılar ve butik markalar için kişiliksiz şablonların ötesinde, ruhu olan mekanlar.</p>
-        <div class='flex flex-wrap justify-center gap-4'>
-          <a href='#hakkimizda' class='bg-primary text-white px-8 py-4 rounded-2xl font-bold hover:opacity-90 transition-all hover:scale-105'>Felsefemiz</a>
-          <a href='#hizmetler' class='border-2 border-white/70 text-white px-8 py-4 rounded-2xl font-bold hover:bg-white/10 transition-all'>Hizmetlerimiz</a>
+        <p class='text-lg text-gray-100 leading-relaxed max-w-2xl mx-auto mb-10'>Berlin ve Almanya genelinde ev sahipleri, kiracılar ve küçük işletmeler için kişiselleştirilmiş, zamansız mekânlar kurguluyoruz.</p>
+        <div class='flex flex-col sm:flex-row gap-4 justify-center'>
+          <a href='#hakkimizda' class='bg-primary px-8 py-4 rounded-2xl font-bold hover:opacity-90 transition-all hover:scale-105 text-white'>Felsefemiz</a>
+          <a href='#hizmetler' class='border-2 border-white/70 px-8 py-4 rounded-2xl font-bold hover:bg-white/10 transition-all'>Hizmetler</a>
         </div>
       </div>
     </div>
-
     <div class='hero-slide relative min-h-screen flex items-center w-full flex-shrink-0'>
-      <img src='https://res.cloudinary.com/dlfzvqf9k/image/upload/assets/INT-007/Projects/Kitchen_Design/sonn1.jpg' alt='Özel Proje Daveti' class='absolute inset-0 w-full h-full object-cover'/>
+      <img src='https://res.cloudinary.com/dlfzvqf9k/image/upload/assets/INT-007/Projects/Furniture_Design/son.jpg' alt='Davet' class='absolute inset-0 w-full h-full object-cover'>
       <div class='absolute inset-0 bg-black/55'></div>
-      <div class='relative z-10 text-white text-center max-w-4xl mx-auto px-4'>
+      <div class='relative z-10 text-white text-center max-w-4xl mx-auto px-4 fade-up'>
         <p class='text-sm font-medium tracking-widest uppercase mb-6 text-accent'>Ücretsiz İlk Konsültasyon</p>
-        <h2 class='text-5xl md:text-7xl font-black tracking-tight leading-tight mb-6 font-display'>Mekanınızı Yeniden Düşünelim</h2>
-        <p class='text-lg md:text-xl text-gray-100 leading-relaxed max-w-2xl mx-auto mb-10'>Konsept geliştirmeden üretime; tüm süreci sizin adınıza yönetiyoruz. Sessizlik de bir tasarımdır — birlikte başlayalım.</p>
-        <div class='flex flex-wrap justify-center gap-4'>
-          <a href='#contact-form' class='bg-primary text-white px-8 py-4 rounded-2xl font-bold hover:opacity-90 transition-all hover:scale-105'>Randevu Alın</a>
-          <a href='https://wa.me/4917675221290' class='border-2 border-white/70 text-white px-8 py-4 rounded-2xl font-bold hover:bg-white/10 transition-all'><i class='fab fa-whatsapp mr-2'></i>WhatsApp</a>
+        <h2 class='text-5xl md:text-7xl font-black tracking-tight leading-tight mb-6 font-display'>Mekânınız, Ruhunuz</h2>
+        <p class='text-lg text-gray-100 leading-relaxed max-w-2xl mx-auto mb-10'>Vizyonunuzu anlamak için ücretsiz bir başlangıç görüşmesi. Size özel mood board ve konsept önerisiyle tanışın.</p>
+        <div class='flex flex-col sm:flex-row gap-4 justify-center'>
+          <a href='#contact-form' class='bg-primary px-8 py-4 rounded-2xl font-bold hover:opacity-90 transition-all hover:scale-105 text-white'>Randevu Al</a>
+          <a href='https://wa.me/4917675221290' class='border-2 border-white/70 px-8 py-4 rounded-2xl font-bold hover:bg-white/10 transition-all'><i class='fa-brands fa-whatsapp mr-2'></i>WhatsApp</a>
         </div>
       </div>
     </div>
-
   </div>
   <button id='hero-prev' class='absolute left-4 top-1/2 -translate-y-1/2 z-20 bg-white/20 hover:bg-white/40 backdrop-blur-sm text-white w-12 h-12 rounded-full flex items-center justify-center transition-all'><i class='fa fa-chevron-left'></i></button>
   <button id='hero-next' class='absolute right-4 top-1/2 -translate-y-1/2 z-20 bg-white/20 hover:bg-white/40 backdrop-blur-sm text-white w-12 h-12 rounded-full flex items-center justify-center transition-all'><i class='fa fa-chevron-right'></i></button>
   <div id='hero-dots' class='absolute bottom-6 left-1/2 -translate-x-1/2 z-20 flex gap-2'></div>
 </section>
 
-<!-- HİZMETLER -->
 <section id='hizmetler' class='py-24 lg:py-32 bg-bg-light'>
   <div class='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
     <div class='text-center max-w-3xl mx-auto mb-16 fade-up'>
-      <p class='text-sm font-medium tracking-widest uppercase text-accent-dark mb-4'>Hizmetlerimiz</p>
-      <h2 class='text-3xl md:text-4xl font-bold tracking-tight text-gray-900 font-display mb-6'>Fikirden Anahtar Teslime</h2>
-      <p class='text-lg text-gray-600 leading-relaxed'>Her projede ilk düşünceden uygulamaya kadar tüm süreci yönetiyoruz. Sadece dekorasyon değil — bütünsel mekan deneyimleri kuruyoruz.</p>
+      <p class='text-sm font-medium tracking-widest uppercase text-accent mb-4'>Hizmetler</p>
+      <h2 class='text-3xl md:text-4xl font-bold tracking-tight text-gray-900 mb-6 font-display'>Fikirden Anahtar Teslime, Bütünsel Tasarım</h2>
+      <p class='text-lg text-gray-600 leading-relaxed'>Her proje; konsept, detay ve zanaatın bir araya geldiği sessiz bir kompozisyondur.</p>
     </div>
-
-    <div class='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8'>
-      <div class='fade-up bg-white rounded-2xl shadow-lg hover:shadow-2xl hover:scale-105 p-8 border border-gray-100 transition-all duration-300'>
-        <i class='fa-solid fa-lightbulb fa-2xl mb-4 text-primary'></i>
-        <h3 class='text-xl font-semibold text-gray-900 mb-3 mt-4'>Konsept Yaratımı</h3>
-        <p class='text-lg text-gray-600 leading-relaxed'>İlk konsültasyon, mood board hazırlığı ve projenizin ruhunu tanımlayan editöryal konsept geliştirme.</p>
+    <div class='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 fade-up'>
+      <div class='bg-white rounded-2xl shadow-lg hover:shadow-2xl p-8 border border-gray-100 transition-all duration-300 hover:scale-105'>
+        <i class='fa-solid fa-palette fa-2xl mb-4 text-primary'></i>
+        <h3 class='text-xl font-semibold text-gray-900 mb-3 mt-4'>Konsept & Mood Board</h3>
+        <p class='text-lg text-gray-600 leading-relaxed'>İlk konsültasyondan başlayarak vizyonunuzu zarif bir tasarım diline dönüştürürüz.</p>
       </div>
-
-      <div class='fade-up bg-white rounded-2xl shadow-lg hover:shadow-2xl hover:scale-105 p-8 border border-gray-100 transition-all duration-300'>
+      <div class='bg-white rounded-2xl shadow-lg hover:shadow-2xl p-8 border border-gray-100 transition-all duration-300 hover:scale-105'>
         <i class='fa-solid fa-cube fa-2xl mb-4 text-primary'></i>
         <h3 class='text-xl font-semibold text-gray-900 mb-3 mt-4'>3D Görselleştirme</h3>
-        <p class='text-lg text-gray-600 leading-relaxed'>Mekanınızı fotogerçekçi 3D sahnelerle önceden deneyimleyin; her malzeme ve ışık detayı ile birlikte.</p>
+        <p class='text-lg text-gray-600 leading-relaxed'>Tam kapsamlı 3D konsept görselleri ile mekânınızı inşa edilmeden önce yaşayın.</p>
       </div>
-
-      <div class='fade-up bg-white rounded-2xl shadow-lg hover:shadow-2xl hover:scale-105 p-8 border border-gray-100 transition-all duration-300'>
+      <div class='bg-white rounded-2xl shadow-lg hover:shadow-2xl p-8 border border-gray-100 transition-all duration-300 hover:scale-105'>
         <i class='fa-solid fa-couch fa-2xl mb-4 text-primary'></i>
         <h3 class='text-xl font-semibold text-gray-900 mb-3 mt-4'>Özel Mobilya Tasarımı</h3>
-        <p class='text-lg text-gray-600 leading-relaxed'>Mekana özel tasarlanmış, zanaatkar atölyelerimizle üretilen karakterli mobilyalar.</p>
+        <p class='text-lg text-gray-600 leading-relaxed'>Size özel tasarlanan mobilyalar; ustalarla koordine edilerek zanaatkârca üretilir.</p>
       </div>
-
-      <div class='fade-up bg-white rounded-2xl shadow-lg hover:shadow-2xl hover:scale-105 p-8 border border-gray-100 transition-all duration-300'>
+      <div class='bg-white rounded-2xl shadow-lg hover:shadow-2xl p-8 border border-gray-100 transition-all duration-300 hover:scale-105'>
         <i class='fa-solid fa-ruler-combined fa-2xl mb-4 text-primary'></i>
+        <h3 class='text-xl font-semibold text-gray-900 mb-3 mt-4'>Mekân Planlama</h3>
+        <p class='text-lg text-gray-600 leading-relaxed'>Işığı, akışı ve işlevi dengeleyen planlarla mekânınızın potansiyelini açığa çıkarırız.</p>
+      </div>
+      <div class='bg-white rounded-2xl shadow-lg hover:shadow-2xl p-8 border border-gray-100 transition-all duration-300 hover:scale-105'>
+        <i class='fa-solid fa-compass-drafting fa-2xl mb-4 text-primary'></i>
         <h3 class='text-xl font-semibold text-gray-900 mb-3 mt-4'>Teknik Çizimler</h3>
-        <p class='text-lg text-gray-600 leading-relaxed'>Detaylı yapım, üretim ve montaj çizimleri; sahada hatasız uygulama için titizlikle hazırlanır.</p>
+        <p class='text-lg text-gray-600 leading-relaxed'>Üretim ve yapım için detaylı teknik çizimler; her milimetre özenle planlanır.</p>
       </div>
-
-      <div class='fade-up bg-white rounded-2xl shadow-lg hover:shadow-2xl hover:scale-105 p-8 border border-gray-100 transition-all duration-300'>
-        <i class='fa-solid fa-swatchbook fa-2xl mb-4 text-primary'></i>
-        <h3 class='text-xl font-semibold text-gray-900 mb-3 mt-4'>Malzeme Seçimi</h3>
-        <p class='text-lg text-gray-600 leading-relaxed'>Keten, ham ahşap, doğal sıva — zamansız ve dokusal malzemelerle zarif paletler kuruyoruz.</p>
-      </div>
-
-      <div class='fade-up bg-white rounded-2xl shadow-lg hover:shadow-2xl hover:scale-105 p-8 border border-gray-100 transition-all duration-300'>
+      <div class='bg-white rounded-2xl shadow-lg hover:shadow-2xl p-8 border border-gray-100 transition-all duration-300 hover:scale-105'>
         <i class='fa-solid fa-key fa-2xl mb-4 text-primary'></i>
-        <h3 class='text-xl font-semibold text-gray-900 mb-3 mt-4'>Anahtar Teslim Yönetim</h3>
-        <p class='text-lg text-gray-600 leading-relaxed'>Tedarikçi ve usta koordinasyonundan son dokunuşa; tüm saha uygulamasını biz yönetiyoruz.</p>
+        <h3 class='text-xl font-semibold text-gray-900 mb-3 mt-4'>Anahtar Teslim Proje</h3>
+        <p class='text-lg text-gray-600 leading-relaxed'>Tedarikçi yönetiminden saha uygulamasına kadar bütün süreç tek elden yönetilir.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- HAKKIMIZDA -->
 <section id='hakkimizda' class='py-24 lg:py-32 bg-white'>
   <div class='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
     <div class='grid lg:grid-cols-2 gap-16 items-center'>
       <div class='fade-up'>
-        <img src='https://res.cloudinary.com/dlfzvqf9k/image/upload/assets/INT-007/Projects/Villa_Design/aci5.jpg' alt='Studio Modvi Atölyesi' class='rounded-2xl shadow-2xl w-full object-cover aspect-[4/5]'/>
+        <img src='https://res.cloudinary.com/dlfzvqf9k/image/upload/assets/INT-007/Projects/Villa_Design/aci5.jpg' alt='Studio Modvi Atölye' class='rounded-2xl shadow-2xl w-full object-cover'>
       </div>
       <div class='fade-up'>
-        <p class='text-sm font-medium tracking-widest uppercase text-accent-dark mb-4'>Hakkımızda</p>
-        <h2 class='text-3xl md:text-4xl font-bold tracking-tight text-gray-900 font-display mb-6'>Melisa Alagöz tarafından kurulan butik bir stüdyo</h2>
-        <p class='text-lg text-gray-600 leading-relaxed mb-5'>Studio Modvi, Berlin merkezli bir iç mimarlık atölyesidir. Her projeyi sınırlı sayıda üretilen bir sanat eseri gibi ele alıyor; tasarımı yaşam tarzına dönüştürüyoruz.</p>
-        <p class='text-lg text-gray-600 leading-relaxed mb-8'>Müşterilerimiz; kişiselleştirilmiş, özenle tasarlanmış yaşam ve çalışma alanları isteyen Berlin ve Almanya genelindeki ev sahipleri, kiracılar ve butik işletme sahipleridir. Türkçe ve Almanca dillerinde çalışıyoruz.</p>
-
+        <p class='text-sm font-medium tracking-widest uppercase text-accent mb-4'>Hakkımızda</p>
+        <h2 class='text-3xl md:text-4xl font-bold tracking-tight text-gray-900 mb-6 font-display'>Berlin'den Doğan Bir Tasarım Felsefesi</h2>
+        <p class='text-lg text-gray-600 leading-relaxed mb-5'>Studio Modvi, Melisa Alagöz tarafından Berlin'de kurulmuş butik bir iç mimarlık stüdyosudur. Biz sadece dekore etmiyoruz — her müşterinin yaşam tarzına ve vizyonuna özel, bütünsel mekân deneyimleri yaratıyoruz.</p>
+        <p class='text-lg text-gray-600 leading-relaxed'>Doğal malzemelerin sıcaklığı, zanaatın sessiz titizliği ve editöryal bir estetik anlayışı; işimizin üç temel direğidir. Sessizlik de bir tasarımdır.</p>
         <div class='grid grid-cols-3 gap-6 mt-10'>
           <div class='text-center'>
             <span class='counter text-4xl font-black text-primary' data-target='48'></span>
@@ -272,11 +258,11 @@ html{scroll-behavior:smooth}
           </div>
           <div class='text-center'>
             <span class='counter text-4xl font-black text-primary' data-target='9'></span>
-            <p class='text-sm text-gray-500 mt-1'>Yıllık Tecrübe</p>
+            <p class='text-sm text-gray-500 mt-1'>Yıllık Deneyim</p>
           </div>
           <div class='text-center'>
             <span class='counter text-4xl font-black text-primary' data-target='100'></span>
-            <p class='text-sm text-gray-500 mt-1'>% Memnuniyet</p>
+            <p class='text-sm text-gray-500 mt-1'>Memnun Müşteri %</p>
           </div>
         </div>
       </div>
@@ -284,211 +270,183 @@ html{scroll-behavior:smooth}
   </div>
 </section>
 
-<!-- REFERANSLAR -->
-<section class='py-24 lg:py-32 bg-bg-light relative'>
+<section class='py-24 lg:py-32 bg-bg-light'>
   <div class='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
     <div class='text-center max-w-3xl mx-auto mb-16 fade-up'>
-      <p class='text-sm font-medium tracking-widest uppercase text-accent-dark mb-4'>Referanslar</p>
-      <h2 class='text-3xl md:text-4xl font-bold tracking-tight text-gray-900 font-display mb-6'>Müşterilerimizin Sözleri</h2>
-      <p class='text-lg text-gray-600 leading-relaxed'>Her proje, ortak bir yolculuğun anısıdır.</p>
+      <p class='text-sm font-medium tracking-widest uppercase text-accent mb-4'>Referanslar</p>
+      <h2 class='text-3xl md:text-4xl font-bold tracking-tight text-gray-900 mb-6 font-display'>Müşterilerimizin Sözleri</h2>
     </div>
-
-    <div class='grid md:grid-cols-3 gap-6'>
-      <div class='fade-up backdrop-blur-sm bg-white/60 border border-white/40 rounded-2xl p-6 shadow-lg hover:shadow-2xl hover:scale-105 transition-all duration-300'>
-        <div class='text-accent-dark mb-3'>★★★★★</div>
-        <p class='italic text-gray-700 leading-relaxed mb-5'>"Melisa ve ekibi, dairemizi ruhu olan bir eve dönüştürdü. Her detayın bir niyeti vardı — bu farkı hissediyorsunuz."</p>
-        <p class='font-semibold text-gray-900'>Clara W.</p>
-        <p class='text-sm text-gray-500'>Ev Sahibi · Berlin Mitte</p>
+    <div class='grid md:grid-cols-3 gap-6 fade-up'>
+      <div class='backdrop-blur-sm bg-white/60 border border-white/40 rounded-2xl p-6 shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-105'>
+        <div class='text-accent mb-3'>★★★★★</div>
+        <p class='italic text-gray-700 leading-relaxed mb-4'>"Melisa evimize ruh kattı. Her detay özenle düşünülmüş, her malzeme yerinde seçilmiş. Editöryal bir dergiden fırlamış gibi hissettiriyor."</p>
+        <p class='font-semibold text-gray-900'>Ayşe K.</p>
+        <p class='text-sm text-gray-500'>Özel Konut · Berlin Mitte</p>
       </div>
-
-      <div class='fade-up backdrop-blur-sm bg-white/60 border border-white/40 rounded-2xl p-6 shadow-lg hover:shadow-2xl hover:scale-105 transition-all duration-300'>
-        <div class='text-accent-dark mb-3'>★★★★★</div>
-        <p class='italic text-gray-700 leading-relaxed mb-5'>"Konseptten anahtar teslime kadar her aşamada profesyonellik. Restoranımız artık tasarımıyla da konuşuluyor."</p>
-        <p class='font-semibold text-gray-900'>Jonas M.</p>
-        <p class='text-sm text-gray-500'>Butik Restoran Sahibi</p>
+      <div class='backdrop-blur-sm bg-white/60 border border-white/40 rounded-2xl p-6 shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-105'>
+        <div class='text-accent mb-3'>★★★★★</div>
+        <p class='italic text-gray-700 leading-relaxed mb-4'>"Sıcak, profesyonel ve son derece zanaatkâr bir yaklaşım. Restoranımızın kimliğini tam olarak yakaladılar."</p>
+        <p class='font-semibold text-gray-900'>Lucas M.</p>
+        <p class='text-sm text-gray-500'>Restoran Sahibi · Kreuzberg</p>
       </div>
-
-      <div class='fade-up backdrop-blur-sm bg-white/60 border border-white/40 rounded-2xl p-6 shadow-lg hover:shadow-2xl hover:scale-105 transition-all duration-300'>
-        <div class='text-accent-dark mb-3'>★★★★★</div>
-        <p class='italic text-gray-700 leading-relaxed mb-5'>"Studio Modvi ile çalışmak; sanatçı bir ekiple yaratıcı bir yolculuğa çıkmak gibiydi. Zamansız, zarif, bize özel."</p>
-        <p class='font-semibold text-gray-900'>Aylin T.</p>
-        <p class='text-sm text-gray-500'>Villa Sahibi · Potsdam</p>
+      <div class='backdrop-blur-sm bg-white/60 border border-white/40 rounded-2xl p-6 shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-105'>
+        <div class='text-accent mb-3'>★★★★★</div>
+        <p class='italic text-gray-700 leading-relaxed mb-4'>"Şablon tasarımlardan sıkılmıştık. Studio Modvi bize gerçekten bize ait bir mekân tasarladı."</p>
+        <p class='font-semibold text-gray-900'>Sophie & Jan R.</p>
+        <p class='text-sm text-gray-500'>Villa Projesi · Potsdam</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- SORUN & ÇÖZÜM -->
 <section class='py-24 lg:py-32 bg-white'>
   <div class='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
     <div class='text-center max-w-3xl mx-auto mb-16 fade-up'>
-      <p class='text-sm font-medium tracking-widest uppercase text-accent-dark mb-4'>Yaklaşımımız</p>
-      <h2 class='text-3xl md:text-4xl font-bold tracking-tight text-gray-900 font-display mb-6'>Kişiliksiz Tasarımdan Ruhu Olan Mekana</h2>
-      <p class='text-lg text-gray-600 leading-relaxed'>Şablon çözümlerden sıkılanlar için; özgün, zamansız ve dokusal bir tasarım dili.</p>
+      <p class='text-sm font-medium tracking-widest uppercase text-accent mb-4'>Sorun & Çözüm</p>
+      <h2 class='text-3xl md:text-4xl font-bold tracking-tight text-gray-900 mb-6 font-display'>Şablondan Özgüne, Hızlıdan Zamansıza</h2>
     </div>
-
-    <div class='grid md:grid-cols-2 gap-8'>
-      <div class='fade-up rounded-2xl border border-red-100 bg-red-50/40 p-8'>
-        <div class='flex items-center gap-3 mb-5'>
-          <i class='fa-solid fa-triangle-exclamation text-red-400 text-xl'></i>
-          <h3 class='text-xl font-semibold text-gray-900'>Sıkça Karşılaşılan Sorun</h3>
+    <div class='grid md:grid-cols-2 gap-8 fade-up'>
+      <div class='bg-rose-50/60 border border-rose-100 rounded-2xl p-8'>
+        <div class='flex items-center gap-3 mb-4'>
+          <i class='fa-solid fa-circle-exclamation text-rose-400 text-2xl'></i>
+          <h3 class='text-xl font-semibold text-gray-900'>Sorun</h3>
         </div>
         <ul class='space-y-3 text-lg text-gray-700 leading-relaxed'>
-          <li class='flex gap-3'><i class='fa-solid fa-minus text-red-400 mt-2 text-xs'></i><span>Her yerde gördüğünüz şablon dekorasyon fikirleri</span></li>
-          <li class='flex gap-3'><i class='fa-solid fa-minus text-red-400 mt-2 text-xs'></i><span>Hızlı tüketilen, karakteri olmayan mobilyalar</span></li>
-          <li class='flex gap-3'><i class='fa-solid fa-minus text-red-400 mt-2 text-xs'></i><span>Farklı tedarikçiler arasında kaybolan proje yönetimi</span></li>
-          <li class='flex gap-3'><i class='fa-solid fa-minus text-red-400 mt-2 text-xs'></i><span>Beklentiyle sonuç arasındaki derin uçurum</span></li>
+          <li>· Kişiliksiz, şablon ve hızlı tüketilen iç mekân çözümleri</li>
+          <li>· Markanın ruhunu yansıtmayan, jenerik dekorasyon</li>
+          <li>· Parçalı süreç yönetimi ve iletişim kopuklukları</li>
+          <li>· Zamansız estetik yerine modası çabuk geçen trendler</li>
         </ul>
       </div>
-
-      <div class='fade-up rounded-2xl border border-green-100 bg-green-50/40 p-8'>
-        <div class='flex items-center gap-3 mb-5'>
-          <i class='fa-solid fa-circle-check text-green-500 text-xl'></i>
-          <h3 class='text-xl font-semibold text-gray-900'>Modvi Çözümü</h3>
+      <div class='bg-emerald-50/60 border border-emerald-100 rounded-2xl p-8'>
+        <div class='flex items-center gap-3 mb-4'>
+          <i class='fa-solid fa-circle-check text-emerald-500 text-2xl'></i>
+          <h3 class='text-xl font-semibold text-gray-900'>Çözüm</h3>
         </div>
         <ul class='space-y-3 text-lg text-gray-700 leading-relaxed'>
-          <li class='flex gap-3'><i class='fa-solid fa-check text-green-500 mt-2 text-xs'></i><span>Yaşam tarzınıza özel, editöryal konsept yaratımı</span></li>
-          <li class='flex gap-3'><i class='fa-solid fa-check text-green-500 mt-2 text-xs'></i><span>Atölye üretimi, karakterli ve zamansız mobilyalar</span></li>
-          <li class='flex gap-3'><i class='fa-solid fa-check text-green-500 mt-2 text-xs'></i><span>Tek elden; anahtar teslime kadar bütünsel yönetim</span></li>
-          <li class='flex gap-3'><i class='fa-solid fa-check text-green-500 mt-2 text-xs'></i><span>3D görselleştirme ile önceden deneyimlenen sonuç</span></li>
+          <li>· Her proje sınırlı sayıda üretilen bir sanat eseri gibi</li>
+          <li>· Yaşam tarzınıza özel, ruhu olan bütünsel mekân</li>
+          <li>· Konseptten anahtar teslime tek elden yönetim</li>
+          <li>· Doğal malzemelerle zamansız, editöryal bir estetik</li>
         </ul>
       </div>
     </div>
   </div>
 </section>
 
-<!-- PORTFÖY -->
 <section id='portfoy' class='py-24 lg:py-32 bg-bg-light'>
   <div class='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
     <div class='text-center max-w-3xl mx-auto mb-16 fade-up'>
-      <p class='text-sm font-medium tracking-widest uppercase text-accent-dark mb-4'>Seçili Projeler</p>
-      <h2 class='text-3xl md:text-4xl font-bold tracking-tight text-gray-900 font-display mb-6'>Portföyümüzden Anlar</h2>
-      <p class='text-lg text-gray-600 leading-relaxed'>Restoranlar, villalar, mutfaklar ve özel mobilya çalışmalarından seçilmiş kareler.</p>
+      <p class='text-sm font-medium tracking-widest uppercase text-accent mb-4'>Portföy</p>
+      <h2 class='text-3xl md:text-4xl font-bold tracking-tight text-gray-900 mb-6 font-display'>Seçili Projeler</h2>
+      <p class='text-lg text-gray-600 leading-relaxed'>Restoran, mutfak, özel mobilya ve villa projelerinden bir seçki.</p>
     </div>
-
-    <div class='grid grid-cols-2 md:grid-cols-3 gap-4'>
-      <div class='rounded-xl overflow-hidden cursor-pointer hover:scale-105 transition-all duration-300 shadow-md'><img src='https://res.cloudinary.com/dlfzvqf9k/image/upload/assets/INT-007/Projects/Restaurant_Poject/22.jpg' alt='Restoran Projesi' data-lightbox='portfolio' class='w-full h-64 object-cover'/></div>
-      <div class='rounded-xl overflow-hidden cursor-pointer hover:scale-105 transition-all duration-300 shadow-md'><img src='https://res.cloudinary.com/dlfzvqf9k/image/upload/assets/INT-007/Projects/Restaurant_Poject/kordonson1.jpg' alt='Kordon Restoran' data-lightbox='portfolio' class='w-full h-64 object-cover'/></div>
-      <div class='rounded-xl overflow-hidden cursor-pointer hover:scale-105 transition-all duration-300 shadow-md'><img src='https://res.cloudinary.com/dlfzvqf9k/image/upload/assets/INT-007/Projects/Kitchen_Design/sonn1.jpg' alt='Mutfak Tasarımı' data-lightbox='portfolio' class='w-full h-64 object-cover'/></div>
-      <div class='rounded-xl overflow-hidden cursor-pointer hover:scale-105 transition-all duration-300 shadow-md'><img src='https://res.cloudinary.com/dlfzvqf9k/image/upload/assets/INT-007/Projects/Kitchen_Design/sonn2.jpg' alt='Mutfak Detay' data-lightbox='portfolio' class='w-full h-64 object-cover'/></div>
-      <div class='rounded-xl overflow-hidden cursor-pointer hover:scale-105 transition-all duration-300 shadow-md'><img src='https://res.cloudinary.com/dlfzvqf9k/image/upload/assets/INT-007/Projects/Furniture_Design/son.jpg' alt='Mobilya Tasarımı' data-lightbox='portfolio' class='w-full h-64 object-cover'/></div>
-      <div class='rounded-xl overflow-hidden cursor-pointer hover:scale-105 transition-all duration-300 shadow-md'><img src='https://res.cloudinary.com/dlfzvqf9k/image/upload/assets/INT-007/Projects/Furniture_Design/son3.jpg' alt='Özel Mobilya' data-lightbox='portfolio' class='w-full h-64 object-cover'/></div>
-      <div class='rounded-xl overflow-hidden cursor-pointer hover:scale-105 transition-all duration-300 shadow-md'><img src='https://res.cloudinary.com/dlfzvqf9k/image/upload/assets/INT-007/Projects/Furniture_Design/edit.jpg' alt='Mobilya Detay' data-lightbox='portfolio' class='w-full h-64 object-cover'/></div>
-      <div class='rounded-xl overflow-hidden cursor-pointer hover:scale-105 transition-all duration-300 shadow-md'><img src='https://res.cloudinary.com/dlfzvqf9k/image/upload/assets/INT-007/Projects/Furniture_Design/son2.jpg' alt='Atölye Eseri' data-lightbox='portfolio' class='w-full h-64 object-cover'/></div>
-      <div class='rounded-xl overflow-hidden cursor-pointer hover:scale-105 transition-all duration-300 shadow-md'><img src='https://res.cloudinary.com/dlfzvqf9k/image/upload/assets/INT-007/Projects/Villa_Design/aci1.jpg' alt='Villa Tasarımı' data-lightbox='portfolio' class='w-full h-64 object-cover'/></div>
-      <div class='rounded-xl overflow-hidden cursor-pointer hover:scale-105 transition-all duration-300 shadow-md'><img src='https://res.cloudinary.com/dlfzvqf9k/image/upload/assets/INT-007/Projects/Villa_Design/aci3.jpg' alt='Villa İç Mekan' data-lightbox='portfolio' class='w-full h-64 object-cover'/></div>
-      <div class='rounded-xl overflow-hidden cursor-pointer hover:scale-105 transition-all duration-300 shadow-md'><img src='https://res.cloudinary.com/dlfzvqf9k/image/upload/assets/INT-007/Projects/Villa_Design/aci4.jpg' alt='Villa Detay' data-lightbox='portfolio' class='w-full h-64 object-cover'/></div>
-      <div class='rounded-xl overflow-hidden cursor-pointer hover:scale-105 transition-all duration-300 shadow-md'><img src='https://res.cloudinary.com/dlfzvqf9k/image/upload/assets/INT-007/Projects/Villa_Design/aci7.jpg' alt='Villa Yaşam Alanı' data-lightbox='portfolio' class='w-full h-64 object-cover'/></div>
-    </div>
-  </div>
-</section>
-
-<!-- YARATICI ELEMENT: Atölye Detayları -->
-<section class='py-24 lg:py-32 bg-white'>
-  <div class='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
-    <div class='text-center max-w-3xl mx-auto mb-16 fade-up'>
-      <p class='text-sm font-medium tracking-widest uppercase text-accent-dark mb-4'>Atölye Fısıltıları</p>
-      <h2 class='text-3xl md:text-4xl font-bold tracking-tight text-gray-900 font-display mb-6'>Sessizlik de Bir Tasarımdır</h2>
-    </div>
-    <div id='wildcard-root' class='grid md:grid-cols-3 gap-6'>
-      <figure class='fade-up relative overflow-hidden rounded-2xl group'>
-        <img src='https://res.cloudinary.com/dlfzvqf9k/image/upload/assets/INT-007/Projects/Villa_Design/aci3.jpg' class='w-full h-96 object-cover transition-transform duration-700 group-hover:scale-110' alt='Detay 1'/>
-        <figcaption class='absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent flex items-end p-6'>
-          <div>
-            <p class='text-xs tracking-widest uppercase text-accent mb-2'>Malzeme</p>
-            <p class='text-white font-display text-2xl'>Ham ahşap & keten</p>
-          </div>
-        </figcaption>
-      </figure>
-      <figure class='fade-up relative overflow-hidden rounded-2xl group'>
-        <img src='https://res.cloudinary.com/dlfzvqf9k/image/upload/assets/INT-007/Projects/Furniture_Design/edit.jpg' class='w-full h-96 object-cover transition-transform duration-700 group-hover:scale-110' alt='Detay 2'/>
-        <figcaption class='absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent flex items-end p-6'>
-          <div>
-            <p class='text-xs tracking-widest uppercase text-accent mb-2'>Zanaat</p>
-            <p class='text-white font-display text-2xl'>El işçiliği dokunuşları</p>
-          </div>
-        </figcaption>
-      </figure>
-      <figure class='fade-up relative overflow-hidden rounded-2xl group'>
-        <img src='https://res.cloudinary.com/dlfzvqf9k/image/upload/assets/INT-007/Projects/Villa_Design/aci7.jpg' class='w-full h-96 object-cover transition-transform duration-700 group-hover:scale-110' alt='Detay 3'/>
-        <figcaption class='absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent flex items-end p-6'>
-          <div>
-            <p class='text-xs tracking-widest uppercase text-accent mb-2'>Işık</p>
-            <p class='text-white font-display text-2xl'>Doğal & sinematik</p>
-          </div>
-        </figcaption>
-      </figure>
+    <div class='grid grid-cols-2 md:grid-cols-3 gap-4 fade-up'>
+      <div class='rounded-xl overflow-hidden cursor-pointer hover:scale-105 transition-all duration-300 shadow-lg'>
+        <img src='https://res.cloudinary.com/dlfzvqf9k/image/upload/assets/INT-007/Projects/Restaurant_Poject/22.jpg' alt='Restoran Projesi' data-lightbox='portfolio' class='w-full h-64 object-cover'>
+      </div>
+      <div class='rounded-xl overflow-hidden cursor-pointer hover:scale-105 transition-all duration-300 shadow-lg'>
+        <img src='https://res.cloudinary.com/dlfzvqf9k/image/upload/assets/INT-007/Projects/Restaurant_Poject/kordonson1.jpg' alt='Kordon Restoran' data-lightbox='portfolio' class='w-full h-64 object-cover'>
+      </div>
+      <div class='rounded-xl overflow-hidden cursor-pointer hover:scale-105 transition-all duration-300 shadow-lg'>
+        <img src='https://res.cloudinary.com/dlfzvqf9k/image/upload/assets/INT-007/Projects/Kitchen_Design/sonn1.jpg' alt='Mutfak Tasarımı' data-lightbox='portfolio' class='w-full h-64 object-cover'>
+      </div>
+      <div class='rounded-xl overflow-hidden cursor-pointer hover:scale-105 transition-all duration-300 shadow-lg'>
+        <img src='https://res.cloudinary.com/dlfzvqf9k/image/upload/assets/INT-007/Projects/Kitchen_Design/sonn2.jpg' alt='Mutfak' data-lightbox='portfolio' class='w-full h-64 object-cover'>
+      </div>
+      <div class='rounded-xl overflow-hidden cursor-pointer hover:scale-105 transition-all duration-300 shadow-lg'>
+        <img src='https://res.cloudinary.com/dlfzvqf9k/image/upload/assets/INT-007/Projects/Furniture_Design/son.jpg' alt='Mobilya' data-lightbox='portfolio' class='w-full h-64 object-cover'>
+      </div>
+      <div class='rounded-xl overflow-hidden cursor-pointer hover:scale-105 transition-all duration-300 shadow-lg'>
+        <img src='https://res.cloudinary.com/dlfzvqf9k/image/upload/assets/INT-007/Projects/Furniture_Design/son3.jpg' alt='Mobilya' data-lightbox='portfolio' class='w-full h-64 object-cover'>
+      </div>
+      <div class='rounded-xl overflow-hidden cursor-pointer hover:scale-105 transition-all duration-300 shadow-lg'>
+        <img src='https://res.cloudinary.com/dlfzvqf9k/image/upload/assets/INT-007/Projects/Furniture_Design/edit.jpg' alt='Editöryal Mobilya' data-lightbox='portfolio' class='w-full h-64 object-cover'>
+      </div>
+      <div class='rounded-xl overflow-hidden cursor-pointer hover:scale-105 transition-all duration-300 shadow-lg'>
+        <img src='https://res.cloudinary.com/dlfzvqf9k/image/upload/assets/INT-007/Projects/Furniture_Design/son2.jpg' alt='Mobilya Detay' data-lightbox='portfolio' class='w-full h-64 object-cover'>
+      </div>
+      <div class='rounded-xl overflow-hidden cursor-pointer hover:scale-105 transition-all duration-300 shadow-lg'>
+        <img src='https://res.cloudinary.com/dlfzvqf9k/image/upload/assets/INT-007/Projects/Villa_Design/aci5.jpg' alt='Villa' data-lightbox='portfolio' class='w-full h-96 object-cover'>
+      </div>
+      <div class='rounded-xl overflow-hidden cursor-pointer hover:scale-105 transition-all duration-300 shadow-lg'>
+        <img src='https://res.cloudinary.com/dlfzvqf9k/image/upload/assets/INT-007/Projects/Villa_Design/aci1.jpg' alt='Villa' data-lightbox='portfolio' class='w-full h-96 object-cover'>
+      </div>
+      <div class='rounded-xl overflow-hidden cursor-pointer hover:scale-105 transition-all duration-300 shadow-lg'>
+        <img src='https://res.cloudinary.com/dlfzvqf9k/image/upload/assets/INT-007/Projects/Villa_Design/aci7.jpg' alt='Villa' data-lightbox='portfolio' class='w-full h-96 object-cover'>
+      </div>
+      <div class='rounded-xl overflow-hidden cursor-pointer hover:scale-105 transition-all duration-300 shadow-lg'>
+        <img src='https://res.cloudinary.com/dlfzvqf9k/image/upload/assets/INT-007/Projects/Villa_Design/aci4.jpg' alt='Villa' data-lightbox='portfolio' class='w-full h-96 object-cover'>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- İLETİŞİM -->
+<section class='py-24 lg:py-32 bg-white relative overflow-hidden'>
+  <div id='wildcard-root' class='absolute inset-0 pointer-events-none'></div>
+  <div class='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative'>
+    <div class='text-center max-w-4xl mx-auto fade-up'>
+      <p class='text-sm font-medium tracking-widest uppercase text-accent mb-6'>Sessiz Bir İmza</p>
+      <h2 class='text-3xl md:text-4xl font-bold tracking-tight text-gray-900 mb-8 font-display italic'>"Her detay bir niyettir. Sessizlik de bir tasarımdır."</h2>
+      <p class='text-lg text-gray-600 leading-relaxed mb-10'>Studio Modvi'nin imza detayı; her projede ortaya çıkan, doğal dokuların sıcaklığı ile editöryal bir galerinin zarafetini birleştiren, fısıltı gibi ama kendinden emin bir tasarım dili.</p>
+      <div class='flex justify-center'>
+        <div class='w-16 h-px bg-primary'></div>
+      </div>
+      <p class='mt-6 font-display text-xl text-primary italic'>— Melisa Alagöz</p>
+    </div>
+  </div>
+</section>
+
 <section id='iletisim' class='py-24 lg:py-32 bg-bg-light'>
   <div class='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
     <div class='text-center max-w-3xl mx-auto mb-16 fade-up'>
-      <p class='text-sm font-medium tracking-widest uppercase text-accent-dark mb-4'>İletişim</p>
-      <h2 class='text-3xl md:text-4xl font-bold tracking-tight text-gray-900 font-display mb-6'>Projenizi Konuşalım</h2>
-      <p class='text-lg text-gray-600 leading-relaxed'>İlk sohbet ücretsizdir. Vizyonunuzu dinlemeyi ve birlikte düşünmeyi seviyoruz.</p>
+      <p class='text-sm font-medium tracking-widest uppercase text-accent mb-4'>İletişim</p>
+      <h2 class='text-3xl md:text-4xl font-bold tracking-tight text-gray-900 mb-6 font-display'>Projenizi Konuşalım</h2>
+      <p class='text-lg text-gray-600 leading-relaxed'>Bir fikir, bir mekân, bir hikâye — hepsini beraber kurgulayalım.</p>
     </div>
-
-    <div class='grid lg:grid-cols-2 gap-12'>
-      <div class='fade-up space-y-6'>
-        <div class='flex items-center gap-4'>
-          <div class='w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center'><i class='fa-solid fa-location-dot text-primary'></i></div>
-          <div>
-            <p class='text-sm font-medium tracking-widest uppercase text-gray-500'>Stüdyo</p>
-            <p class='text-lg text-gray-900 font-semibold'>Berlin, Almanya</p>
-          </div>
+    <div class='grid lg:grid-cols-2 gap-12 fade-up'>
+      <div class='space-y-6'>
+        <div class='flex items-center gap-3 text-gray-800'>
+          <i class='fa-solid fa-location-dot text-primary text-xl w-8'></i>
+          <span class='text-lg'>Berlin, Almanya</span>
         </div>
-        <div class='flex items-center gap-4'>
-          <div class='w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center'><i class='fa-solid fa-phone text-primary'></i></div>
-          <div>
-            <p class='text-sm font-medium tracking-widest uppercase text-gray-500'>Telefon</p>
-            <a href='tel:+4917675221290' class='text-lg text-gray-900 font-semibold hover:text-primary transition-colors'>+49 176 7522 1290</a>
-          </div>
+        <div class='flex items-center gap-3 text-gray-800'>
+          <i class='fa-solid fa-phone text-primary text-xl w-8'></i>
+          <a href='tel:+4917675221290' class='text-lg hover:text-primary transition-colors'>+49 176 7522 1290</a>
         </div>
-        <div class='flex items-center gap-4'>
-          <div class='w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center'><i class='fa-solid fa-envelope text-primary'></i></div>
-          <div>
-            <p class='text-sm font-medium tracking-widest uppercase text-gray-500'>E-posta</p>
-            <a href='mailto:yerlikayamelisalagz@gmail.com' class='text-lg text-gray-900 font-semibold hover:text-primary transition-colors break-all'>yerlikayamelisalagz@gmail.com</a>
-          </div>
+        <div class='flex items-center gap-3 text-gray-800'>
+          <i class='fa-solid fa-envelope text-primary text-xl w-8'></i>
+          <a href='mailto:yerlikayamelisalagz@gmail.com' class='text-lg hover:text-primary transition-colors'>yerlikayamelisalagz@gmail.com</a>
         </div>
-        <div class='flex items-center gap-4'>
-          <div class='w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center'><i class='fa-solid fa-clock text-primary'></i></div>
-          <div>
-            <p class='text-sm font-medium tracking-widest uppercase text-gray-500'>Çalışma Saatleri</p>
-            <p class='text-lg text-gray-900 font-semibold'>Pzt – Cum · 09:00 – 18:00</p>
-          </div>
+        <div class='flex items-center gap-3 text-gray-800'>
+          <i class='fa-solid fa-clock text-primary text-xl w-8'></i>
+          <span class='text-lg'>Pzt – Cum · 09:00 – 18:00</span>
         </div>
-
-        <div class='mt-8'>
-          <iframe class='w-full h-64 rounded-2xl shadow-2xl border-0' src='https://www.google.com/maps?q=Berlin,Germany&output=embed' loading='lazy'></iframe>
+        <div class='flex items-center gap-4 pt-4'>
+          <a href='https://www.instagram.com/studio.modvi' target='_blank' class='w-11 h-11 rounded-full bg-primary text-white flex items-center justify-center hover:opacity-90 transition-all'><i class='fa-brands fa-instagram'></i></a>
+          <a href='https://www.behance.net/melisaalagozy' target='_blank' class='w-11 h-11 rounded-full bg-primary text-white flex items-center justify-center hover:opacity-90 transition-all'><i class='fa-brands fa-behance'></i></a>
+          <a href='https://wa.me/4917675221290' target='_blank' class='w-11 h-11 rounded-full bg-primary text-white flex items-center justify-center hover:opacity-90 transition-all'><i class='fa-brands fa-whatsapp'></i></a>
+        </div>
+        <div class='pt-6'>
+          <iframe src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d77760.88244242928!2d13.38886!3d52.52001!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a84e373f035901%3A0x42120465b5e3b70!2sBerlin!5e0!3m2!1str!2sde!4v1700000000000' class='w-full h-64 rounded-2xl shadow-2xl border-0' loading='lazy'></iframe>
         </div>
       </div>
-
-      <form id='contact-form' class='fade-up bg-white rounded-2xl p-8 shadow-lg'>
-        <div class='grid md:grid-cols-2 gap-5 mb-5'>
-          <div>
-            <label class='text-sm font-medium tracking-widest uppercase text-gray-600 mb-2 block'>Ad</label>
-            <input type='text' name='firstName' class='w-full border border-gray-200 rounded-xl px-4 py-3 focus:ring-2 focus:ring-primary focus:border-transparent outline-none' placeholder='Adınız'/>
-          </div>
-          <div>
-            <label class='text-sm font-medium tracking-widest uppercase text-gray-600 mb-2 block'>Soyad</label>
-            <input type='text' name='lastName' class='w-full border border-gray-200 rounded-xl px-4 py-3 focus:ring-2 focus:ring-primary focus:border-transparent outline-none' placeholder='Soyadınız'/>
-          </div>
+      <form id='contact-form' class='bg-white rounded-2xl p-8 shadow-lg space-y-5'>
+        <div>
+          <label class='text-sm font-medium tracking-widest uppercase text-gray-600 mb-2 block'>İsim</label>
+          <input type='text' name='name' required class='w-full border border-gray-200 rounded-xl px-4 py-3 focus:ring-2 focus:ring-primary focus:border-transparent outline-none'>
         </div>
-        <div class='mb-5'>
+        <div>
           <label class='text-sm font-medium tracking-widest uppercase text-gray-600 mb-2 block'>E-posta</label>
-          <input type='email' name='email' class='w-full border border-gray-200 rounded-xl px-4 py-3 focus:ring-2 focus:ring-primary focus:border-transparent outline-none' placeholder='eposta@ornek.com'/>
+          <input type='email' name='email' required class='w-full border border-gray-200 rounded-xl px-4 py-3 focus:ring-2 focus:ring-primary focus:border-transparent outline-none'>
         </div>
-        <div class='mb-5'>
+        <div>
           <label class='text-sm font-medium tracking-widest uppercase text-gray-600 mb-2 block'>Telefon</label>
-          <input type='tel' name='phone' class='w-full border border-gray-200 rounded-xl px-4 py-3 focus:ring-2 focus:ring-primary focus:border-transparent outline-none' placeholder='+49 ...'/>
+          <input type='tel' name='phone' class='w-full border border-gray-200 rounded-xl px-4 py-3 focus:ring-2 focus:ring-primary focus:border-transparent outline-none'>
         </div>
-        <div class='mb-6'>
-          <label class='text-sm font-medium tracking-widest uppercase text-gray-600 mb-2 block'>Mesaj</label>
-          <textarea name='message' rows='5' class='w-full border border-gray-200 rounded-xl px-4 py-3 focus:ring-2 focus:ring-primary focus:border-transparent outline-none' placeholder='Projenizden biraz bahsedin...'></textarea>
+        <div>
+          <label class='text-sm font-medium tracking-widest uppercase text-gray-600 mb-2 block'>Projeniz</label>
+          <textarea name='message' rows='5' required class='w-full border border-gray-200 rounded-xl px-4 py-3 focus:ring-2 focus:ring-primary focus:border-transparent outline-none'></textarea>
         </div>
         <button type='submit' class='w-full bg-primary text-white py-4 rounded-xl font-bold hover:opacity-90 transition-all'>Projenizi Konuşalım</button>
       </form>
@@ -496,24 +454,22 @@ html{scroll-behavior:smooth}
   </div>
 </section>
 
-<!-- FOOTER -->
-<footer class='bg-gray-900 text-gray-400 pt-16 pb-10'>
+<footer class='bg-gray-900 text-gray-400 py-16'>
   <div class='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
-    <div class='grid md:grid-cols-3 gap-10 mb-12'>
+    <div class='grid md:grid-cols-3 gap-10'>
       <div>
-        <div class='flex items-center gap-3 mb-5'>
+        <div class='flex items-center gap-3 mb-4'>
           <svg class='h-14 w-auto' style='filter:brightness(0) invert(1)' aria-hidden='true'><use href='#logo-symbol'/></svg>
-          <div>
-            <p class='font-display text-xl text-white tracking-wide'>Studio Modvi</p>
-            <p class='text-xs tracking-widest uppercase text-gray-500'>Tasarımın İnce Sanatı</p>
+          <div class='flex flex-col leading-tight'>
+            <span class='font-display text-lg text-white tracking-wide'>Studio Modvi</span>
+            <span class='text-xs tracking-widest uppercase text-gray-500'>Tasarımın İnce Sanatı</span>
           </div>
         </div>
-        <p class='text-gray-400 leading-relaxed'>Berlin merkezli butik iç mimarlık stüdyosu. Fikirden anahtar teslime, her detayda niyet.</p>
+        <p class='text-sm leading-relaxed'>Berlin merkezli butik iç mimarlık stüdyosu. Fikirden anahtar teslime kadar özgün, zamansız mekânlar.</p>
       </div>
-
       <div>
-        <p class='text-sm font-medium tracking-widest uppercase text-white mb-5'>Keşfet</p>
-        <ul class='space-y-3'>
+        <h4 class='text-white font-semibold mb-4 tracking-wide'>Menü</h4>
+        <ul class='space-y-2 text-sm'>
           <li><a href='#hero' class='hover:text-white transition-colors'>Ana Sayfa</a></li>
           <li><a href='#hizmetler' class='hover:text-white transition-colors'>Hizmetler</a></li>
           <li><a href='#hakkimizda' class='hover:text-white transition-colors'>Hakkımızda</a></li>
@@ -521,22 +477,18 @@ html{scroll-behavior:smooth}
           <li><a href='#iletisim' class='hover:text-white transition-colors'>İletişim</a></li>
         </ul>
       </div>
-
       <div>
-        <p class='text-sm font-medium tracking-widest uppercase text-white mb-5'>Takip Edin</p>
-        <div class='flex gap-3 mb-5'>
-          <a href='https://www.instagram.com/studio.modvi' target='_blank' class='w-11 h-11 rounded-xl border border-gray-700 flex items-center justify-center hover:bg-primary hover:border-primary hover:text-white transition-all'><i class='fa-brands fa-instagram'></i></a>
-          <a href='https://www.behance.net/melisaalagozy' target='_blank' class='w-11 h-11 rounded-xl border border-gray-700 flex items-center justify-center hover:bg-primary hover:border-primary hover:text-white transition-all'><i class='fa-brands fa-behance'></i></a>
-          <a href='https://wa.me/4917675221290' target='_blank' class='w-11 h-11 rounded-xl border border-gray-700 flex items-center justify-center hover:bg-primary hover:border-primary hover:text-white transition-all'><i class='fa-brands fa-whatsapp'></i></a>
+        <h4 class='text-white font-semibold mb-4 tracking-wide'>Takip Edin</h4>
+        <div class='flex items-center gap-3'>
+          <a href='https://www.instagram.com/studio.modvi' target='_blank' class='w-10 h-10 rounded-full bg-gray-800 hover:bg-primary text-white flex items-center justify-center transition-all'><i class='fa-brands fa-instagram'></i></a>
+          <a href='https://www.behance.net/melisaalagozy' target='_blank' class='w-10 h-10 rounded-full bg-gray-800 hover:bg-primary text-white flex items-center justify-center transition-all'><i class='fa-brands fa-behance'></i></a>
+          <a href='https://wa.me/4917675221290' target='_blank' class='w-10 h-10 rounded-full bg-gray-800 hover:bg-primary text-white flex items-center justify-center transition-all'><i class='fa-brands fa-whatsapp'></i></a>
         </div>
-        <p class='text-gray-400'>Berlin · Almanya</p>
-        <p class='text-gray-400'>+49 176 7522 1290</p>
+        <p class='text-sm mt-5'>+49 176 7522 1290<br>Berlin, Almanya</p>
       </div>
     </div>
-
-    <div class='border-t border-gray-800 pt-6 flex flex-col md:flex-row justify-between items-center gap-3'>
-      <p class='text-sm'>© <span id='yr'></span> Studio Modvi. Tüm hakları saklıdır.</p>
-      <p class='text-sm italic'>"Her detay bir niyettir."</p>
+    <div class='border-t border-gray-800 mt-12 pt-6 text-center text-sm'>
+      © <span id='yr'></span> Studio Modvi · Tüm hakları saklıdır.
     </div>
   </div>
 </footer>
@@ -547,7 +499,7 @@ html{scroll-behavior:smooth}
 <script>
 document.addEventListener('DOMContentLoaded', function() {
   // 1. Smooth scroll
-  document.querySelectorAll('a[href^="#"]').forEach(link => {
+  document.querySelectorAll("a[href^='#']").forEach(link => {
     link.addEventListener('click', function(e) {
       const href = this.getAttribute('href');
       if (href === '#' || href.length < 2) return;
@@ -563,7 +515,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 
-  // 2. Hamburger menü
+  // 2. Hamburger menu
   const hamburger = document.getElementById('hamburger');
   const mobileMenu = document.getElementById('mobile-menu');
   if (hamburger && mobileMenu) {
@@ -572,68 +524,102 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
 
-  // 3. IntersectionObserver
-  const observer = new IntersectionObserver(function(entries) {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('visible');
-      }
-    });
-  }, { threshold: 0.1 });
-  document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+  // 3. IntersectionObserver for .fade-up
+  const fadeEls = document.querySelectorAll('.fade-up');
+  if ('IntersectionObserver' in window) {
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          io.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.15 });
+    fadeEls.forEach(el => io.observe(el));
+  } else {
+    fadeEls.forEach(el => el.classList.add('visible'));
+  }
 
   // 4. Hero Carousel
   const heroSlides = document.getElementById('hero-slides');
-  if (heroSlides) {
-    const slides = heroSlides.querySelectorAll('.hero-slide');
-    const totalSlides = slides.length;
-    let currentSlide = 0;
-    let autoplayInterval = null;
-    const dotsContainer = document.getElementById('hero-dots');
+  const slides = heroSlides ? heroSlides.querySelectorAll('.hero-slide') : [];
+  const totalSlides = slides.length;
+  let currentSlide = 0;
+  let autoplayInterval = null;
+  const dotsContainer = document.getElementById('hero-dots');
+  const prevBtn = document.getElementById('hero-prev');
+  const nextBtn = document.getElementById('hero-next');
 
-    function goToSlide(n) {
-      currentSlide = (n + totalSlides) % totalSlides;
+  function goToSlide(n) {
+    if (totalSlides === 0) return;
+    currentSlide = (n + totalSlides) % totalSlides;
+    if (heroSlides) {
       heroSlides.style.transform = 'translateX(-' + (currentSlide * 100) + '%)';
-      updateDots();
+      heroSlides.style.transition = 'transform 0.6s ease';
     }
+    updateDots();
+  }
 
-    function updateDots() {
-      if (!dotsContainer) return;
-      const dotBtns = dotsContainer.querySelectorAll('button');
-      dotBtns.forEach((btn, i) => {
-        if (i === currentSlide) {
-          btn.classList.add('active', 'opacity-100');
-          btn.classList.remove('opacity-50');
-        } else {
-          btn.classList.remove('active', 'opacity-100');
-          btn.classList.add('opacity-50');
-        }
-      });
-    }
-
-    if (dotsContainer) {
-      for (let i = 0; i < totalSlides; i++) {
-        const btn = document.createElement('button');
-        btn.className = 'w-3 h-3 rounded-full bg-white opacity-50 transition';
-        btn.addEventListener('click', () => goToSlide(i));
-        dotsContainer.appendChild(btn);
+  function updateDots() {
+    if (!dotsContainer) return;
+    const dotBtns = dotsContainer.querySelectorAll('button');
+    dotBtns.forEach((btn, i) => {
+      if (i === currentSlide) {
+        btn.classList.add('active', 'opacity-100');
+        btn.classList.remove('opacity-50');
+      } else {
+        btn.classList.remove('active', 'opacity-100');
+        btn.classList.add('opacity-50');
       }
-      updateDots();
-    }
+    });
+  }
 
-    const prevBtn = document.getElementById('hero-prev');
-    const nextBtn = document.getElementById('hero-next');
-    if (prevBtn) prevBtn.addEventListener('click', () => goToSlide(currentSlide - 1));
-    if (nextBtn) nextBtn.addEventListener('click', () => goToSlide(currentSlide + 1));
+  if (dotsContainer && totalSlides > 0) {
+    for (let i = 0; i < totalSlides; i++) {
+      const dot = document.createElement('button');
+      dot.className = 'w-3 h-3 rounded-full bg-white opacity-50 transition-opacity mx-1';
+      dot.setAttribute('aria-label', 'Go to slide ' + (i + 1));
+      dot.addEventListener('click', () => {
+        goToSlide(i);
+        restartAutoplay();
+      });
+      dotsContainer.appendChild(dot);
+    }
+    updateDots();
+  }
 
-    function startAutoplay() {
-      autoplayInterval = setInterval(() => goToSlide(currentSlide + 1), 5000);
+  if (prevBtn) {
+    prevBtn.addEventListener('click', () => {
+      goToSlide(currentSlide - 1);
+      restartAutoplay();
+    });
+  }
+  if (nextBtn) {
+    nextBtn.addEventListener('click', () => {
+      goToSlide(currentSlide + 1);
+      restartAutoplay();
+    });
+  }
+
+  function startAutoplay() {
+    if (totalSlides <= 1) return;
+    autoplayInterval = setInterval(() => {
+      goToSlide(currentSlide + 1);
+    }, 5000);
+  }
+  function stopAutoplay() {
+    if (autoplayInterval) {
+      clearInterval(autoplayInterval);
+      autoplayInterval = null;
     }
-    function stopAutoplay() {
-      if (autoplayInterval) { clearInterval(autoplayInterval); autoplayInterval = null; }
-    }
+  }
+  function restartAutoplay() {
+    stopAutoplay();
     startAutoplay();
+  }
 
+  if (heroSlides && totalSlides > 0) {
+    startAutoplay();
     const heroContainer = heroSlides.parentElement;
     if (heroContainer) {
       heroContainer.addEventListener('mouseenter', stopAutoplay);
@@ -641,67 +627,84 @@ document.addEventListener('DOMContentLoaded', function() {
 
       let touchStartX = 0;
       let touchEndX = 0;
-      heroContainer.addEventListener('touchstart', e => {
+      heroContainer.addEventListener('touchstart', (e) => {
         touchStartX = e.changedTouches[0].screenX;
-        stopAutoplay();
-      });
-      heroContainer.addEventListener('touchend', e => {
+      }, { passive: true });
+      heroContainer.addEventListener('touchend', (e) => {
         touchEndX = e.changedTouches[0].screenX;
-        const diff = touchStartX - touchEndX;
+        const diff = touchEndX - touchStartX;
         if (Math.abs(diff) > 50) {
-          if (diff > 0) goToSlide(currentSlide + 1);
+          if (diff < 0) goToSlide(currentSlide + 1);
           else goToSlide(currentSlide - 1);
+          restartAutoplay();
         }
-        startAutoplay();
-      });
+      }, { passive: true });
     }
   }
 
   // 6. Lightbox
-  const portfolioImages = document.querySelectorAll('.portfolio-item img, [data-lightbox] img, #portfolio img');
+  const portfolioImgs = document.querySelectorAll('.portfolio-item img, [data-lightbox] img, #portfolio img');
   let lightbox = document.getElementById('lightbox');
-  if (!lightbox && portfolioImages.length > 0) {
+  if (!lightbox) {
     lightbox = document.createElement('div');
     lightbox.id = 'lightbox';
-    lightbox.className = 'fixed inset-0 bg-black bg-opacity-90 z-50 hidden items-center justify-center p-4 cursor-pointer';
-    lightbox.innerHTML = '<img src="" class="max-w-full max-h-full object-contain" id="lightbox-img"><button class="absolute top-4 right-4 text-white text-4xl">&times;</button>';
+    lightbox.className = 'fixed inset-0 bg-black bg-opacity-90 z-[9999] hidden items-center justify-center p-4';
+    lightbox.innerHTML = '<button id="lightbox-close" class="absolute top-6 right-6 text-white text-4xl font-bold hover:text-gray-300" aria-label="Close">&times;</button><img id="lightbox-img" class="max-w-full max-h-full object-contain" alt="" />';
     document.body.appendChild(lightbox);
   }
-  if (lightbox) {
-    const lightboxImg = document.getElementById('lightbox-img') || lightbox.querySelector('img');
-    portfolioImages.forEach(img => {
-      img.style.cursor = 'pointer';
-      img.addEventListener('click', function() {
-        lightboxImg.src = this.src;
-        lightbox.classList.remove('hidden');
-        lightbox.classList.add('flex');
-      });
-    });
-    lightbox.addEventListener('click', function() {
-      lightbox.classList.add('hidden');
-      lightbox.classList.remove('flex');
-    });
+  const lightboxImg = document.getElementById('lightbox-img');
+  const lightboxClose = document.getElementById('lightbox-close');
+
+  function openLightbox(src, alt) {
+    if (lightboxImg) {
+      lightboxImg.src = src;
+      lightboxImg.alt = alt || '';
+    }
+    lightbox.classList.remove('hidden');
+    lightbox.classList.add('flex');
+    document.body.style.overflow = 'hidden';
   }
+  function closeLightbox() {
+    lightbox.classList.add('hidden');
+    lightbox.classList.remove('flex');
+    document.body.style.overflow = '';
+  }
+
+  portfolioImgs.forEach(img => {
+    img.style.cursor = 'pointer';
+    img.addEventListener('click', () => openLightbox(img.src, img.alt));
+  });
+
+  if (lightboxClose) lightboxClose.addEventListener('click', closeLightbox);
+  lightbox.addEventListener('click', (e) => {
+    if (e.target === lightbox) closeLightbox();
+  });
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') closeLightbox();
+  });
 
   // 7. Telif yılı
   const yrEl = document.getElementById('yr');
   if (yrEl) yrEl.textContent = new Date().getFullYear();
 
-  // 8. Form gönderim feedback
+  // 8. Form feedback
   const contactForm = document.getElementById('contact-form');
   if (contactForm) {
     contactForm.addEventListener('submit', function(e) {
       e.preventDefault();
-      let msg = document.getElementById('form-success');
-      if (!msg) {
-        msg = document.createElement('div');
-        msg.id = 'form-success';
-        msg.className = 'mt-4 p-4 bg-green-100 text-green-800 rounded-lg text-center font-semibold';
-        contactForm.appendChild(msg);
+      let feedback = document.getElementById('form-feedback');
+      if (!feedback) {
+        feedback = document.createElement('div');
+        feedback.id = 'form-feedback';
+        feedback.className = 'mt-4 p-4 bg-green-100 text-green-800 rounded-lg text-center font-medium';
+        contactForm.appendChild(feedback);
       }
-      msg.textContent = 'Mesajınız başarıyla gönderildi! En kısa sürede size dönüş yapacağız.';
+      feedback.textContent = 'Mesajınız başarıyla gönderildi! En kısa sürede size dönüş yapacağız.';
+      feedback.style.display = 'block';
       contactForm.reset();
-      setTimeout(() => { if (msg) msg.remove(); }, 5000);
+      setTimeout(() => {
+        feedback.style.display = 'none';
+      }, 5000);
     });
   }
 });
